@@ -348,7 +348,7 @@ DEPENDENCIES
   bootstrap-social-rails
   byebug
   carrierwave
-  coffee-rails (~> 4.1.0)
+  coffee-rails (~> 4.1.1)
   colorize_unpermitted_parameters
   database_rewinder
   devise
@@ -386,4 +386,4 @@ DEPENDENCIES
   xray-rails
 
 BUNDLED WITH
-   1.14.6
+   1.15.1
