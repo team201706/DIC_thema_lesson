@@ -1,9 +1,11 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10">
+    <p id="notice"><%= notice %></p>
 
-<h1>Listing Blogs</h1>
+    <h1>Listing Blogs</h1>
 
-<table>
-  <thead>
+    <table>
+    <thead>
     <tr>
       <th>ユーザー名</th>
       <th>Title</th>
@@ -14,6 +16,7 @@
 
   <tbody>
     <% @blogs.each do |blog| %>
+      <div class="row">
       <tr>
         <td><%= blog.user.name %></td>
         <td><%= blog.title %></td>
@@ -22,6 +25,7 @@
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
         <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+    </div>
     <% end %>
   </tbody>
 </table>
@@ -29,3 +33,6 @@
 <br>
 
 <%= link_to 'New Blog', new_blog_path %>
+
+ </div>
+</div>
